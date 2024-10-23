@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web UTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article class="container">
+       
+        <header>
+            <img src="ungu ines(2).jpg" class="logo-header" alt="logo">
+            <h2>Profil Mahasiswa</h2>
+        </header>
+       
+        <article class="content">
+            <nav>
+                <article>
+                <article class="s-head">
+                </article>
+                <article>
+                    <ul>
+                        <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+                        <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                        <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                        <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+                        <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+                    </ul>
+                </article>
+            </article>
+            </nav>
+
+        
+            <section>
+                <article id="biodata" class="content-section">
+                    <h2>Biodata</h2>
+                    <table>
+                        <tr><td>NIM</td><td>:</td><td>2023081021</td></tr>
+                        <tr><td>Nama</td><td>:</td><td>Putri Ines Salsabilla</td></tr>
+                        <tr><td>Agama</td><td>:</td><td>Islam</td></tr>
+                        <tr><td>Tanggal Lahir</td><td>:</td><td>20 Agustus 2005</td></tr>
+                        <tr><td>Tempat Lahir</td><td>:</td><td>Tangerang</td></tr>
+                    </table>
+                </article>
+                <article id="pendidikan" class="content-section" style="display: none;">
+                    <h2>Pendidikan</h2>
+                    <ul>
+                        <li>(2023 - Sekarang) Universitas Pembangunan Jaya</li>
+                        <li>(2020 - 2023) SMA Negeri 10 Tangerang Selatan</li>
+                        <li>(2017 - 2020) MTs Rahmania Islamic School</li>
+                        <li>(2012 - 2017) MI Rahmania Islamic School</li>
+                    </ul>
+                </article>
+                <article id="pengalaman" class="content-section" style="display: none;">
+                    <h2>Pengalaman</h2>
+                    <ul>
+                        <li>(2023 - 2024) Sekretaris Himpunan Mahasiswa Sistem Informasi</li>
+                        <li>(2023 - 2024) Magang JSDP Biro Kemahasiswaan dan Alumni</li>
+                        <li>(2023 - 2024) Cologne Summer School 2024 di University of Cologne, Jerman</li>
+                        <li>(2023 - 2024) Panitia Kuliah Umum CS4ALL (CYBERSECURITY FOR ALL)</li>
+                        <li>(2023 - 2024) Anggota Divisi Acara GID HUB 2024</li>
+                        <li>(2023 - 2024) Asisten Dosen Aljabar Linear</li>
+                        <li>(2023 - 2024) Asisten Dosen Matematika Rekayasa</li>
+                        <li>(2023 - 2024) Divisi Artistik - Komunitas Distrik Berisik</li>
+                        <li>(2022 - 202) Ketua Pelaksana - Zero Hunger Volunteer</li>
+                        <li>(2022 - 2023) Kepala Divisi Hubungan Masyarakat</li>
+                    </ul>
+                </article>
+                <article id="keahlian" class="content-section" style="display: none;">
+                    <h2>Keahlian</h2>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>Figma</li>
+                        <li>Laravel 11</li>
+                        <li>Bootstrap</li>
+                        <li>Web Programming using CSS, HTML, JavaScript</li>
+                    </ul>
+                </article>
+                <article id="publikasi" class="content-section" style="display: none;">
+                    <h2>Publikasi</h2>
+                    <ul>
+                        <li>Pengaruh Teknologi Informasi pada Unit Layanan Disabilitas di Lingkungan Universitas</li>
+                    </ul>
+                </article>
+            </section>
+
+            <aside>
+                <article>
+                <article class="s-head">
+                    <h2>Hobi</h2>
+                    <ul>
+                        <li>Membaca</li>
+                        <li>Pemrograman</li>
+                        <li>Traveling</li>
+                    </ul>
+                </article>
+            </article>
+            </aside>
+        </article>
+
+        <footer>
+            <article class="footer-left">
+                <p>Twitter: @putriines</p>
+                <p>FB: @putriines</p>
+                <p>Instagram: @sallsabillaptr</p>
+            </article>
+            <article class="footer-center">
+                <p>&copy; Copyright 2024. All Rights Reserved</p>
+            </article>
+            <article class="footer-right">
+                <p>Web Profil | We Make IT Happen | SIF</p>
+            </article>
+        </footer>
+    </article>
+
+    <script>
+        function showContent(section) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(div) {
+                div.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

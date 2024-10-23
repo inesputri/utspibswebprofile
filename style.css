@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EEEEEE;
+    color: #FEFAE0;
+    font-size: 16px;
+}
+
+.logo-header{
+    float: left;
+    position: 'absolute';
+    width: 100px;
+}
+
+s.head {
+    text-align: center;
+    font-weight: 200;
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 6px 5px 12px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.content{
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+li,td {
+    padding: 3px;
+}
+
+header, nav, section, aside, footer{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header, footer{
+    background-color: #9B7EBD;
+    width: 100%;
+    box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.75);
+    margin-top: 5px;
+}
+
+nav, section, aside{
+    float: left;
+    min-height: 450px;
+    color:#33372C;
+}
+
+nav, aside{
+    background-color: #FEFAE0;
+    width: 25%;
+    color:#33372C;
+}
+
+nav a {
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    color: inherit; /* Warna teks sesuai dengan elemen induk */
+}
+
+section{
+    background-color: #FEFAE0;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+nav ul li, aside ul li {
+    margin: 20px 0; /* Beri jarak antar item */
+}
+
+.clearStyle{
+    clear: both;
+}
+
+aside{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.75) inset;
+}
+
+nav{
+    box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.75) inset;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+}
+
+nav ul, aside ul {
+    list-style-type: none; /* Hilangkan bullet */
+    
+}
+
+/* Footer */
+footer {
+    background-color: #3B1E54;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+/* Tablet Layout */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+    nav, section{
+        min-height: 400px;
+    }
+    section{
+        width: 75%;
+    }
+    aside{
+        width: 100%;
+        min-height: 200px;
+        margin-top: 5px;
+    }
+    nav ul, aside ul {
+        list-style-type: none; /* Hilangkan bullet */
+    }
+    nav a {
+        text-decoration: none; /* Hilangkan garis bawah pada link */
+        color: inherit; /* Warna teks sesuai dengan elemen induk */
+    }
+    nav ul li, aside ul li {
+        margin: 20px 0; /* Beri jarak antar item */
+    }
+}
+
+/* Tablet Portrait Layout */
+@media screen and (max-width: 760px) {
+    .flex-container {
+        flex-direction: column; /* Tetap vertikal untuk kontainer utama */
+    }
+
+    nav {
+        display: flex; /* Gunakan flexbox untuk tampilan mendatar */
+        flex-direction: row; /* Tampilkan secara horizontal */
+        align-items: center; /* Rata tengah secara vertikal */
+        justify-content: center; /* Rata tengah secara horizontal */
+        width: 100%;
+        min-height: 50px; /* Tinggi minimal yang lebih kecil agar mendatar */
+        margin-top: 5px;
+    }
+
+    aside {
+        display: flex; /* Gunakan flexbox untuk tampilan mendatar */
+        flex-direction: row; /* Tampilkan secara horizontal */
+        align-items: center; /* Rata tengah secara vertikal */
+        justify-content: left; /* Rata tengah secara horizontal */
+        width: 100%;
+        min-height: 50px; /* Tinggi minimal yang lebih kecil agar mendatar */
+        margin-top: 5px;
+    }
+
+    nav ul, aside ul {
+        display: flex; /* Gunakan flexbox untuk ul */
+        flex-direction: row; /* Tampilkan ul secara mendatar */
+        justify-content: center; /* Rata tengah elemen */
+        list-style-type: none; /* Hilangkan bullet */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li, aside ul li {
+        margin: 0 10px; /* Jarak antar item */
+    }
+
+    nav a, aside li {
+        display: inline-block; /* Tampilan inline untuk teks mendatar */
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+    section {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* HP Layout */
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav, aside {
+        width: 100%;
+        display: block; /* Tampil secara vertikal */
+        margin-top: 5px;
+        text-align: left; /* Sejajarkan teks ke kiri */
+    }
+
+    nav ul, aside ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: block; /* Menampilkan ul secara vertikal */
+    }
+
+    nav ul li, aside ul li {
+        display: block; /* Setiap item list tampil secara vertikal */
+        margin: 5px 0; /* Beri jarak antar item */
+    }
+
+    nav a {
+        display: block; /* Link ditampilkan secara vertikal */
+        padding: 5px 0;
+        text-decoration: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
